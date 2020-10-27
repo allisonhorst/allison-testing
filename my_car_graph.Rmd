@@ -12,6 +12,6 @@ library(tidyverse)
 
 ```{r}
 ggplot(data = mpg, aes(x = class, y = cty)) +
-  geom_jitter()
+  geom_jitter(aes(color = class), size = 3)
 ```
 
