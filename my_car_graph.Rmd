@@ -1,0 +1,17 @@
+---
+title: "blah blah"
+author: "Allison Horst"
+date: "10/27/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+```{r}
+ggplot(data = mpg, aes(x = class, y = cty)) +
+  geom_jitter()
+```
+
